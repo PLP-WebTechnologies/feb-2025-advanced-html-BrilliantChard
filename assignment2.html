@@ -1,0 +1,149 @@
+<!-- Create an index.html file.
+Add an ordered list with roman numerals
+Add an external image from pexels.com
+Add a table of 5 contacts with; name, address, mobile and emails
+Add a registration form -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+  </head>
+  <body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <p>The following is a list of all my areas of expertise:</p>
+    <ol type="i">
+      <li>Computer Networking</li>
+      <li>Telecommunication Engineering</li>
+      <li>Web Programming</li>
+      <li>Cybersecurity</li>
+      <li>Electrical Engineering</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Image from Pexels</h2>
+    <img
+      src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+      alt="Beautiful Scenery"
+      width="400"
+    />
+
+    <!-- Contacts Table -->
+    <h2>Contacts Table</h2>
+    <p>
+      The following is a list describing the contact details of various persons:
+    </p>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Chard Odhiambo</td>
+        <td>123 Main St</td>
+        <td>+254797394105</td>
+        <td>chardodhiambo@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Jane Anyango</td>
+        <td>456 Oak St</td>
+        <td>+2547123494748</td>
+        <td>janes@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Mike Johnson</td>
+        <td>789 Pine St</td>
+        <td>+1122334455</td>
+        <td>mikejohnson@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Emily Davis</td>
+        <td>321 Cedar St</td>
+        <td>+6677889900</td>
+        <td>emilydavis@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Robert Brown</td>
+        <td>654 Birch St</td>
+        <td>+2233445566</td>
+        <td>robertbrown@gmail.com</td>
+      </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter a strong password"
+        required
+        minlength="6"
+      />
+      <br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br /><br />
+
+      <!-- Dropdown -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Select a country</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+      </select>
+      <br /><br />
+
+      <!-- Radio Buttons -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" required />
+      <label for="other">Other</label>
+      <br /><br />
+
+      <!-- Checkboxes -->
+      <label>Interests:</label>
+      <input type="checkbox" id="sports" name="interests" value="sports" />
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="interests" value="music" />
+      <label for="music">Music</label>
+      <input type="checkbox" id="reading" name="interests" value="reading" />
+      <label for="reading">Reading</label>
+      <br /><br />
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
